@@ -1,14 +1,16 @@
 // ANOTAÇOES
 // 1- SELEÇÃO DE OPERAÇÃO 2- AQUISIÇÃO DE VALOR DAS VARIAVEIS DA OPERAÇÕES 3- IMPRESSÃO DE RESULTADOS
 package com.calculadora;
+
 import java.util.Scanner;
+
 public class calculadora{
      public static void main(String[] args) {
-        int operação;
+        int operacao;
         Scanner escolha = new Scanner(System.in);
         System.out.println("INSIRA O TIPO DE OPERAÇÃO:1-adição,2-subtração,3-multiplicação,4-divisão");
-        operação = escolha.nextInt();
-        switch(operação) {
+        operacao = escolha.nextInt();
+        switch(operacao) {
             case 1:
                int  a, b, soma;
                 Scanner numb = new Scanner(System.in);
@@ -43,18 +45,13 @@ public class calculadora{
                 System.out.println("Insira numeros da operação");
                 a3 = numb3.nextInt();
                 b3 = numb3.nextInt();
-                divs = a3 % b3;
+                divs = a3 / b3;
                 System.out.println("O resultado da operação é " + divs);
             break;
             default:
-                throw new IllegalArgumentException("É SO DE 1 A 4 SEU INCOMPETENTE");
-
-
-
-
-
-
-        }
+                throw new IllegalArgumentException();
+               
+                
+            }
     
-}
-}
+}}
