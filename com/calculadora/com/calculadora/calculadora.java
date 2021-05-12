@@ -1,8 +1,8 @@
 // ANOTAÇOES
-// 1-package
+// 1-
 package com.calculadora;
 import java.util.Scanner;
-public class calculadora{
+public class calculadora {
     public static void main(String[] args) {
      int main_question; 
      Scanner question = new Scanner(System.in);
